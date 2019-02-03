@@ -21,7 +21,7 @@ grep -o -E  "^[a-zA-Z0-9_-.]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$"  regex_practice.txt 
 grep "303-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$" regex_practice.txt > phone_results.txt
 
 #@geocities emails
-grep "^[a-zA-Z0-9_-.]+@geocities.com$" regex_practice.txt > email_results.txt
+grep -o -E  "^[a-zA-Z0-9_-.]+@geocities.com$" regex_practice.txt > email_results.txt
 
 #match command line regex
 grep $1 $2 > command_results.txt 
